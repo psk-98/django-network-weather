@@ -1,0 +1,303 @@
+html{
+    font-size: 10px;
+}
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0 ;
+    padding: 0;
+    color: #fff;
+    fill: #fff;
+}
+#des_contact {
+    color: #ffed00;
+}
+a {
+    color: #fff;
+}
+a:hover {
+    color: #ffed00;
+}
+#header {
+    font-size: 1.2rem;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: #ffed00;
+    fill: #ffed00;
+}
+.Icon_email {
+    width: 1.2rem;
+}
+#main {
+    padding: 0 3.8rem 0 3.8rem;
+}
+#intro {
+    padding: 3.2rem 0 0 0;
+}
+#Hello{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: -2%;
+}
+#name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 6.3rem;
+    line-height: 0%;
+}
+#job{
+    padding: 3.2rem 0 0 13.1rem;
+}
+#arrow{
+    float: left;
+}
+#arrow-icon{
+    width: 5.1rem;
+}
+#job_des{
+    float: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffed00;
+    padding: 3.8rem 0 0 1.4rem;
+}
+#based{
+    clear: both;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.012rem;
+    width: 60%;
+    padding: 3.2rem 0 0 0;
+}
+#content-projects {
+    padding: 3.2rem 0 0 0;
+}
+#image-slider{
+    padding: 3.2rem 3.8rem 0 3.8rem;
+}
+#image-holder{
+    width: 26.3rem;
+    height: 13.2rem;
+}
+.previous-icon{
+    width: 1.2rem;
+}
+.next-icon{
+    width: 1.2rem;
+}
+#Description{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.012rem;
+    text-align: left;
+    padding: 2rem 0 0 0;
+    width: 60%;
+}
+
+/* media queires */
+
+@media (min-width : 360px ) and (orientation:landscape){
+    #header{
+        font-size: 1.5rem;
+    }
+    .Icon_email{
+        width: 1.5rem;
+    }
+    #intro {
+        padding-left: 8.4rem;
+    }
+    #Hello{
+        font-size: 4rem;
+    }
+    #name{
+        font-size: 2.5rem;
+        padding-left: 10.2rem;
+    }
+    #job{
+        padding-left: 32.9rem;
+    }
+    #arrow-icon{
+        width: 7.5rem;
+    }
+    #job_des{
+        font-size: 2.2rem;
+        padding: 4.7rem 0 0 5.7rem;
+    }
+    #based{
+        font-size: 1.8rem;
+        width: 50%;
+        padding-left: 8.4rem;
+    }
+    #content-projects {
+        padding-left:  8.4rem;
+    }
+    #image-slider{
+        text-align: center;
+        width: 60.6903rem;
+        height: 30.5556rem;
+    }
+    #image-holder{
+        width: 80%;
+    }
+    .previous-icon{
+        width: 2.47rem;
+        height: auto;
+    }
+    .next-icon{
+        width: 2.47rem;
+        height: auto;
+    }
+    #Description{
+        font-size: 1.8rem;
+        width: 50%;
+        padding: 0;
+    }
+}
+
+@media (min-width : 768px){
+    #header {
+        font-size: 2.5rem;
+    }
+    .Icon_email {
+        width: 2.5rem;
+    }
+    #main {
+        padding: 0 8rem 0 8rem;
+    }
+    #Hello {
+        font-size: 6.5rem;
+    }
+    #name {
+        font-size: 3.6rem;
+        padding-left: 14rem;
+    }
+    #job {
+        padding: 6.4rem 0 0 28.2rem;
+    }
+    #arrow-icon {
+        width: 10.8rem;
+    }
+    #job_des {
+        font-size: 2.7rem;
+        padding: 7.7rem 0 0 2.6rem;
+    }
+    #based {
+        font-size: 2.5rem;
+        width: 50%;
+    }
+    #image-slider{
+        width: 56.4903rem;
+        height: 28.7222rem;
+    }
+    #image-holder{
+        width: 80%;
+        height: 100%;
+    }
+    .previous-icon{
+        width: 2.47rem;
+    }
+    .next-icon{
+        width: 2.47rem;
+    }
+    #Description{
+        font-size: 2.5rem;
+        width: 50%;
+        padding: 0;
+    } 
+}
+@media (min-width : 768px) and (orientation:landscape){
+    #intro {
+        padding-left: 9.6rem;
+    }
+    #name {
+        padding-left: 16.6rem;
+    }
+    #job {
+        padding-left: 46.6rem;
+    }
+    #job_des {
+        padding-left: 7.1rem;
+    }
+    #based {
+        padding-left: 9.6rem;
+    }
+    #content-projects {
+        padding-left: 9.6rem;
+    }
+    #image-slider {
+        text-align: center;
+        width: 78.0253rem;
+        height: 39.7222rem;
+    }
+    #image-holder {
+        width: 80%;
+        height: 100%;
+    }
+    .previous-icon {
+        width: 3.705rem;
+    }
+    .next-icon {
+        width: 3.705rem;
+    }
+}
+
+@media (min-width:1366px){
+    #header {
+        font-size: 3rem;
+    }
+    .Icon_email {
+        width: 3rem;
+    }
+    #main {
+        padding: 0 13.9rem 0 13.9rem;
+    }
+    #intro {
+        padding-left: 12.6rem;
+    }
+    #Hello {
+        font-size: 8rem;
+    }
+    #name {
+        font-size: 3.6rem;
+        padding-left: 20.8rem;
+    }
+    #job {
+        padding-left: 53.6rem;
+    }
+    #job_des {
+        font-size: 3.6rem;
+        padding: 6.6rem 0 0 9.2rem;
+    }
+    #based {
+        font-size: 3.6rem;
+        padding-left: 12.6rem;
+        width: 51%;
+    }
+    #content-projects{
+        padding-left: 12.6rem;
+    }
+    #image-slider{
+        text-align: center;
+        width: 92.7428rem;
+        height: 48.8889rem;
+    }
+    #image-holder{
+        width: 80%;
+        height: 100%;
+    }
+    .previous-icon {
+        width: 4.3rem;
+    }
+    .next-icon {
+        width: 4.2rem;
+    }
+    #Description {
+        font-size: 3.6rem;
+        width: 50%;
+        padding: 0;
+    } 
+}

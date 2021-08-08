@@ -1,0 +1,36 @@
+{% extends "home/layout.html" %}
+
+{% block title %} Register {% endblock %}
+
+{% block body %}
+
+    <div id="theform">
+        <h2>Register</h2>
+
+        {% if message %}
+            <div><p>{{ message }}</p></div>
+        {% endif %}
+    
+        <form action="{% url 'home:sign_up' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <input autofocus type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirmation" placeholder="Confirm Password">
+            </div>
+            {% if request.GET.next %}
+                <input type="hidden" name="next" value="{{ request.GET.next }}">
+            {% endif %}
+            <button class="btn btn-dark" type="submit">Register</button>
+        </form>
+        Already have an account? <a href="{% url 'home:login' %}">Log In here.</a>
+    </div>
+
+{% endblock %}

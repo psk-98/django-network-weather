@@ -1,0 +1,132 @@
+ body {
+    font-size: 0.7rem;
+ }
+ #body {
+   padding: 0 5% 0 5%;
+}
+h6 {
+    padding: 5px;
+    font-size: .75rem;
+}
+h5 {
+    font-size: .75rem;
+}
+#the-favs {
+    width: 100%;
+    padding: 0 25% 0 25%;
+    text-align: center;
+}
+#the-list {
+    padding: 2% 0 0 0;
+}
+.the-city {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    margin: 0 1% 1% 0;
+    float: left;
+    width: 79%;
+}
+.remove-btn {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    width: 20%;
+    float: left;
+}
+.remove-btn:hover{
+    font-weight: bolder;
+    font-size: large;
+}
+.the-city:hover{
+    font-weight: bold;
+}
+#degrees{
+    width: 5px;
+    height: auto;
+}
+#the_search{
+    width: 100%;
+    height: auto;
+}
+#thelabel{
+    text-align: left;
+    width: 50%; 
+}
+#thevalue{
+    width: 50%;
+    text-align: right;
+}
+#search-btn{
+    width: 100%;
+    height: auto;
+}
+.daily{
+    float: left;
+    width: 33%;
+    min-height: 100%;
+    text-align: center;  
+}
+#card-daily{
+    height: 280px;
+} 
+#card-details{
+    height: 280px;
+}
+#main{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+#carouselExampleControls{
+    width: 80%;
+    margin: auto;
+}
+#daily-divs{
+    height: 33%;
+}
+.the-display{
+    width: 80%;
+    height: 280px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.previous {
+    overflow: visible;
+    fill: #333;
+    opacity: 0.9;
+    width: 25px;
+    height: auto;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.next {
+    overflow: visible;
+    fill: #333;
+    opacity: 0.9;
+    width: 25px;
+    height: auto;
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+#the-form{
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+@media (min-width : 768px ){
+    body{
+        font-size: 1rem;
+    }
+    h6 {
+        padding: 5px;
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1.25rem;
+    }
+}
+
+
+        

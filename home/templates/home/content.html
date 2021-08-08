@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="{% static '/CSS/content.css' %}">
+        <script src="{% static 'Javascript/index.js' %}"></script>
+    </head>
+    <body style="background-image: url({% static '/Images/bg.jpg' %});">
+        <nav class="navbar">
+                <div class="burger">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+                <div class="logo">
+                    Paul Khoza
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="{% url 'home:index' %}" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="main">
+                <div class="abt" id="about">
+                    <h1>About me</h1>
+                    <hr>
+                    <span class="desc">
+                        I'm a self taught web developer based 
+                        in South Africa. I design and develop 
+                        websites tailored for your needs.
+                        Lets make something special
+                    </span>
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>Adobe XD</span>
+                        <span>Django</span>
+                    </div>
+                </div>
+                <div class="work" id="work">
+                    <h1>Projects</h1>
+                    <hr>
+                    <div class="cards-wrapper">
+                        <div class="card">
+                            <div class="top">
+                                <img src="{% static '/Images/weather.png' %}">
+                            </div>
+                            <div class="bottom">
+                                <span>
+                                    This is a weather site that shows that show the current day and some details along with a forecast for the next 3 days 
+                                </span>
+                                <br>
+                                <a href="{% url 'weather:index' %}" target="_blank">
+                                    <button>Link here</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top">
+                                <img src="{% static '/Images/network.png' %}">
+                            </div>
+                            <div class="bottom">
+                                <span>
+                                    A social media type site users can post, like and view posts (more updates coming soon)
+                                </span>
+                                <br>
+                                <a href="https://app-network.netlify.app" target="_blank">
+                                    <button>Link here</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="contact" id="contact">
+                    <h1>Contact</h1>
+                    <hr>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <textarea name="message" placeholder="Message" ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    <div>
+                        <span>Email: paulk198@hotmail.com</span>
+                        <a href="mailto:PaulK198@hotmail.com">"
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 13.5">
+                                <path id="Icon_zocial-email" data-name="Icon zocial-email" d="M.072,16.373V5.264q0-.019.058-.366L6.668,10.49.149,16.758a1.635,1.635,0,0,1-.077-.386ZM.94,4.126a.831.831,0,0,1,.328-.058H18.876a1.092,1.092,0,0,1,.347.058L12.666,9.738l-.868.694L10.082,11.84,8.365,10.433,7.5,9.738ZM.959,17.511,7.536,11.2l2.546,2.064L12.627,11.2,19.2,17.511a.926.926,0,0,1-.328.058H1.268a.874.874,0,0,1-.309-.058ZM13.5,10.49,20.014,4.9a1.151,1.151,0,0,1,.058.366V16.373a1.478,1.478,0,0,1-.058.386Z" transform="translate(-0.072 -4.068)" fill="#f2e429"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                </div>  
+            </section>
+        <script src="{% static '/Javascript/index.js' %}" async defer></script>
+    </body>
+</html>

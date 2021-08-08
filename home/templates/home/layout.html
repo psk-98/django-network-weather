@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'CSS/login_reg.css' %}" rel="stylesheet">
+    </head>
+    <body style="background-image: url({% static '/Images/bg.jpg' %});">
+        <ul class="nav justify-content-center">
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home:logout' %}" >Logout</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home:login' %}" >Login</a>
+                </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home:index' %}" id="About">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 77.512 58.479">
+                        <path id="Icon_awesome-home" data-name="Icon awesome-home" d="M37.727,17.424,12.919,37.248v21.4a2.122,2.122,0,0,0,2.153,2.089l15.079-.038a2.121,2.121,0,0,0,2.142-2.089V46.111a2.122,2.122,0,0,1,2.153-2.089h8.612a2.122,2.122,0,0,1,2.153,2.089V58.6a2.057,2.057,0,0,0,.628,1.481,2.187,2.187,0,0,0,1.525.614l15.073.04a2.122,2.122,0,0,0,2.153-2.089V37.234l-24.8-19.809A1.68,1.68,0,0,0,37.727,17.424ZM76.915,30.9l-11.249-9V3.82a1.591,1.591,0,0,0-1.615-1.567H56.516A1.591,1.591,0,0,0,54.9,3.82V13.3L42.854,3.683a6.613,6.613,0,0,0-8.208,0L.585,30.9A1.535,1.535,0,0,0,.37,33.1L3.8,37.152a1.63,1.63,0,0,0,1.092.564,1.649,1.649,0,0,0,1.183-.351L37.727,12.072a1.68,1.68,0,0,1,2.059,0L71.438,37.364a1.649,1.649,0,0,0,2.274-.209l3.431-4.047a1.535,1.535,0,0,0,.359-1.151,1.554,1.554,0,0,0-.588-1.059Z" transform="translate(0.001 -2.253)"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home:sign_up' %}" >Register</a>
+            </li>
+        </ul>
+        <div id="content-wrap" class="container">
+            {% block body %}
+    
+            {% endblock %}
+        </div>
+    </body>
+</html>

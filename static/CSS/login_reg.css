@@ -1,0 +1,53 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 10%;
+}
+p {
+    font-weight: bold;
+}
+svg {
+    width: 20px;
+}
+#theform {
+    border-radius: 5px;
+    background-color: rgba(255, 237, 0, 0.5) ;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    color: rgba(0, 0, 0,1);
+}
+.nav-link {
+    fill: #FFF;
+}
+.nav-link:hover {
+    color: #ffed00;
+    fill: #ffed00;
+}
+.form-group {
+    padding: 5px;
+}
+button {
+    margin-bottom: 5px;
+}
+h2 {
+    text-align: center;
+}
+a {
+    color: #FFF;
+}
+a:hover {
+    color: #000;
+}
